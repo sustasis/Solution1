@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel’s Tree Services | Canutillo, El Paso & Upper Valley Tree Care</title>
+  <meta name="description" content="Angel’s Tree Services (Angel’s Trees) provides expert pruning, hazardous tree removal, stump grinding, precision trimming, and seasoned firewood in Canutillo, El Paso, and the Upper Valley. Free written on-site estimates & 24/7 emergency line." />
+
+  <meta name="google-site-verification" content="PqygZfVx5OaS80ib1fRrfZ53C_tTON7s4EHpBQy5hjY" />
+
+  <!-- Open Graph / Local SEO -->
+  <meta property="og:title" content="Angel’s Tree Services | Canutillo & El Paso, TX" />
+  <meta property="og:description" content="Free written on-site estimates, full debris haul-off, and 24/7 emergency tree work across Canutillo, the Upper Valley, and El Paso." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://angelstreeservices.47andsix.com" />
+
+  <!-- Fonts: Bricolage Grotesque, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- LocalBusiness Structured Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TreeService",
+    "name": "Angel's Tree Services",
+    "alternateName": "Angel's Trees",
+    "founder": {
+      "@type": "Person",
+      "name": "Angel Adrian Loya"
+    },
+    "telephone": "+1-915-243-9717",
+    "url": "https://angelstreeservices.47andsix.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "141 Dixie St",
+      "addressLocality": "Canutillo",
+      "addressRegion": "TX",
+      "postalCode": "79835",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      "Canutillo, TX",
+      "Upper Valley, El Paso, TX",
+      "West El Paso, TX",
+      "El Paso, TX",
+      "Vinton, TX",
+      "Anthony, TX",
+      "Santa Teresa, NM",
+      "Sunland Park, NM"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    :root {
+      /* Core Palette: Parchment, Forest Green, Safety Orange */
+      --parchment: #F6F2E9;
+      --parchment-light: #FBF9F5;
+      --parchment-deep: #EAE3D2;
+      --forest: #122E20;
+      --forest-mid: #1E4631;
+      --forest-muted: #3A5A48;
+      --safety-orange: #E85002;
+      --safety-orange-hover: #C94200;
+      --safety-orange-soft: rgba(232, 80, 2, 0.12);
+      --ink: #141C17;
+      --ink-muted: #4A554E;
+      --border: #D5CEBE;
+      --border-strong: #122E20;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --shadow-card: 0 6px 0 var(--forest);
+      --shadow-subtle: 0 10px 30px -10px rgba(18, 46, 32, 0.12);
+
+      /* Typography */
+      --font-display: 'Bricolage Grotesque', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--parchment);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      background-image: radial-gradient(rgba(18, 46, 32, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Emergency Top Utility Bar */
+    .utility-bar {
+      background-color: var(--forest);
+      color: var(--parchment-light);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.6rem 0;
+      border-bottom: 2px solid var(--safety-orange);
+    }
+
+    .utility-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .utility-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--safety-orange);
+      color: #fff;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 1; }
+      50% { transform: scale(1.25); opacity: 0.6; }
+      100% { transform: scale(0.95); opacity: 1; }
+    }
+
+    /* Sticky Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(246, 242, 233, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid var(--forest);
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 76px;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .brand-logo-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background-color: var(--forest);
+      border: 2px solid var(--forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      color: var(--parchment);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+
+    .brand-logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-primary {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--forest);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-sub {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--forest-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--forest);
+    }
+
+    .nav-links a:hover {
+      color: var(--safety-orange);
+    }
+
+    .nav-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.75rem 1.35rem;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--forest);
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+      text-align: center;
+    }
+
+    .btn-orange {
+      background-color: var(--safety-orange);
+      color: #ffffff;
+      box-shadow: 0 4px 0 var(--forest);
+    }
+
+    .btn-orange:hover {
+      background-color: var(--safety-orange-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 var(--forest);
+    }
+
+    .btn-orange:active {
+      transform: translateY(1px);
+      box-shadow: 0 2px 0 var(--forest);
+    }
+
+    .btn-forest {
+      background-color: var(--forest);
+      color: var(--parchment-light);
+      box-shadow: 0 4px 0 var(--safety-orange);
+    }
+
+    .btn-forest:hover {
+      background-color: var(--forest-mid);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background-color: var(--parchment-light);
+      color: var(--forest);
+      box-shadow: 0 4px 0 var(--forest);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--parchment-deep);
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 4rem 0 4.5rem;
+      border-bottom: 2px solid var(--forest);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--forest);
+      background-color: var(--parchment-deep);
+      border: 1.5px solid var(--forest);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.35rem, 4.5vw, 3.8rem);
+      font-weight: 800;
+      color: var(--forest);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 .accent {
+      color: var(--safety-orange);
+      text-decoration: underline;
+      text-decoration-thickness: 4px;
+      text-underline-offset: 6px;
+    }
+
+    .hero-lead {
+      font-size: 1.125rem;
+      color: var(--ink-muted);
+      max-width: 60ch;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      padding-top: 1.5rem;
+      border-top: 1.5px dashed var(--border);
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .trust-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--forest-muted);
+      font-weight: 600;
+    }
+
+    .trust-value {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--forest);
+    }
+
+    /* Field Dispatch Card in Hero */
+    .dispatch-card {
+      background-color: var(--parchment-light);
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+    }
+
+    .dispatch-header {
+      background-color: var(--forest);
+      color: var(--parchment-light);
+      padding: 1rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+    }
+
+    .dispatch-body {
+      padding: 1.5rem;
+    }
+
+    .dispatch-Spec {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      padding: 0.65rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    .dispatch-Spec:last-of-type {
+      border-bottom: none;
+    }
+
+    .spec-key {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--forest-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .spec-val {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .policy-callout {
+      margin-top: 1.15rem;
+      background-color: var(--safety-orange-soft);
+      border-left: 4px solid var(--safety-orange);
+      padding: 0.85rem 1rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      color: var(--ink);
+    }
+
+    /* Section Scaffolding */
+    .section {
+      padding: 4.5rem 0;
+      border-bottom: 2px solid var(--forest);
+    }
+
+    .section-alt {
+      background-color: var(--parchment-light);
+    }
+
+    .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1.5rem;
+      margin-bottom: 2.75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 3.2vw, 2.65rem);
+      font-weight: 800;
+      color: var(--forest);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+    }
+
+    .section-sub {
+      color: var(--ink-muted);
+      max-width: 56ch;
+      font-size: 1.02rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background-color: var(--parchment-light);
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-md);
+      padding: 1.65rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .service-num {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--safety-orange);
+      background-color: var(--safety-orange-soft);
+      border: 1px solid var(--safety-orange);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--forest);
+      margin-bottom: 0.65rem;
+    }
+
+    .service-card p {
+      color: var(--ink-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-meta {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--forest);
+      padding-top: 0.85rem;
+      border-top: 1px dashed var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Field Gallery (4 Arborist Photos) */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .photo-card {
+      background-color: var(--parchment);
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .photo-frame {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 100%);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+    }
+
+    .photo-fallback {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      text-align: center;
+      color: var(--parchment);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+    }
+
+    .photo-fallback-tag {
+      background-color: var(--safety-orange);
+      color: #fff;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .photo-caption {
+      padding: 1rem 1.15rem;
+      background-color: var(--parchment-light);
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .photo-caption h4 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--forest);
+      margin-bottom: 0.25rem;
+    }
+
+    .photo-caption p {
+      font-size: 0.86rem;
+      color: var(--ink-muted);
+    }
+
+    /* Coverage / Service Area Section */
+    .coverage-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .town-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1.25rem;
+    }
+
+    .town-pill {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+      background-color: var(--parchment-light);
+      border: 1.5px solid var(--forest);
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      color: var(--forest);
+    }
+
+    .town-pill.primary {
+      background-color: var(--forest);
+      color: var(--parchment-light);
+    }
+
+    /* Estimate & Initial Read Form Section */
+    .estimate-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .read-vs-inspection-box {
+      background-color: var(--forest);
+      color: var(--parchment-light);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 2px solid var(--forest);
+      box-shadow: 0 6px 0 var(--safety-orange);
+    }
+
+    .read-vs-inspection-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      margin-bottom: 0.85rem;
+      color: #fff;
+    }
+
+    .comparison-list {
+      list-style: none;
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+
+    .comparison-list li {
+      background: rgba(255, 255, 255, 0.07);
+      border-left: 3px solid var(--safety-orange);
+      padding: 0.85rem 1rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .comparison-list strong {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      color: #FFB088;
+      margin-bottom: 0.25rem;
+    }
+
+    .form-card {
+      background-color: var(--parchment-light);
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .form-label {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--forest);
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem 0.9rem;
+      border: 1.5px solid var(--forest);
+      border-radius: var(--radius-sm);
+      background-color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: 2px solid var(--safety-orange);
+      border-color: var(--safety-orange);
+    }
+
+    .disclaimer-check {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      background-color: var(--parchment-deep);
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-strong);
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .disclaimer-check input {
+      margin-top: 0.25rem;
+      accent-color: var(--safety-orange);
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .form-status {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      display: none;
+    }
+
+    .form-status.success {
+      display: block;
+      background-color: #E3F4EA;
+      border: 1.5px solid var(--forest);
+      color: var(--forest);
+    }
+
+    .form-status.error {
+      display: block;
+      background-color: #FDECE6;
+      border: 1.5px solid var(--safety-orange);
+      color: #8C2D00;
+    }
+
+    /* FAQ Accordion */
+    .faq-list {
+      display: grid;
+      gap: 1rem;
+      max-width: 880px;
+    }
+
+    details.faq-item {
+      background-color: var(--parchment-light);
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-sm);
+      box-shadow: 0 4px 0 var(--forest);
+      padding: 1.1rem 1.35rem;
+    }
+
+    details.faq-item summary {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.12rem;
+      color: var(--forest);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.faq-item summary::after {
+      content: "+";
+      font-family: var(--font-mono);
+      font-size: 1.3rem;
+      color: var(--safety-orange);
+      font-weight: 700;
+    }
+
+    details.faq-item[open] summary::after {
+      content: "−";
+    }
+
+    details.faq-item p {
+      margin-top: 0.85rem;
+      padding-top: 0.85rem;
+      border-top: 1px dashed var(--border);
+      color: var(--ink-muted);
+      font-size: 0.96rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: var(--forest);
+      color: var(--parchment);
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(246, 242, 233, 0.2);
+    }
+
+    .footer-title {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 0.65rem;
+    }
+
+    .footer-mono {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: #A9C2B3;
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-bottom {
+      padding-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #A9C2B3;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 920px) {
+      .hero-grid,
+      .coverage-layout,
+      .estimate-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .trust-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 24/7 Emergency Utility Strip -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div>
+        <span class="utility-badge"><span class="pulse-dot"></span> 24/7 Emergency Line</span>
+        <span style="margin-left: 0.6rem;">Storm damage, split limbs & fallen trees across Canutillo & El Paso</span>
+      </div>
+      <div>
+        Direct Dispatch: <a href="tel:9152439717" style="color: #fff; font-weight: 700; text-decoration: underline;">(915) 243-9717</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="#top" class="brand" aria-label="Angel's Tree Services Home">
+        <div class="brand-logo-wrap">
+          <!-- Place logo.png in your folder; falls back cleanly to "AT" emblem if not found -->
+          <img src="logo.png" alt="Angel's Tree Services Logo" onerror="this.style.display='none'; this.parentElement.textContent='AT';" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-primary">Angel’s Tree Services</span>
+          <span class="brand-sub">Angel’s Trees · Canutillo, TX</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Field Work</a>
+        <a href="#coverage">Service Area</a>
+        <a href="#estimate">Written Estimate</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-cta-group">
+        <a href="tel:9152439717" class="btn btn-outline" style="padding: 0.6rem 1rem; font-family: var(--font-mono); font-size: 0.85rem;">
+          (915) 243-9717
+        </a>
+        <a href="#estimate" class="btn btn-orange" style="padding: 0.6rem 1.1rem;">
+          Free Estimate
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">
+            <span>Owner-Operated · Angel Adrian Loya</span>
+          </div>
+          <h1>
+            Safe, Disciplined Tree Work Across <span class="accent">Canutillo & El Paso</span>.
+          </h1>
+          <p class="hero-lead">
+            From tight-quarter removals and structural pruning to stump grinding and seasoned firewood. Every job includes complete debris haul-off and starts with a <strong>free written on-site estimate</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="#estimate" class="btn btn-orange">
+              Request Written On-Site Estimate
+            </a>
+            <a href="tel:9152439717" class="btn btn-forest">
+              Call (915) 243-9717 — 24/7
+            </a>
+          </div>
+
+          <div class="trust-strip">
+            <div class="trust-item">
+              <span class="trust-label">Pricing Standard</span>
+              <span class="trust-value">Free Written On-Site Estimates</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-label">Clean-Up Policy</span>
+              <span class="trust-value">100% Debris Haul-Off Included</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-label">Urgent Dispatch</span>
+              <span class="trust-value">24/7 Emergency Tree Line</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Field Dispatch Card -->
+        <aside class="dispatch-card" aria-label="Company Specifications">
+          <div class="dispatch-header">
+            <span>FIELD DISPATCH // ANGEL'S TREES</span>
+            <span>TX-79835</span>
+          </div>
+          <div class="dispatch-body">
+            <div class="dispatch-Spec">
+              <span class="spec-key">Operator</span>
+              <span class="spec-val">Angel Adrian Loya</span>
+            </div>
+            <div class="dispatch-Spec">
+              <span class="spec-key">Yard Base</span>
+              <span class="spec-val">141 Dixie St, Canutillo, TX 79835</span>
+            </div>
+            <div class="dispatch-Spec">
+              <span class="spec-key">Direct Line</span>
+              <span class="spec-val"><a href="tel:9152439717" style="color: var(--safety-orange); font-family: var(--font-mono);">(915) 243-9717</a></span>
+            </div>
+            <div class="dispatch-Spec">
+              <span class="spec-key">Core Work</span>
+              <span class="spec-val">Pruning, Removal, Stump Grinding, Precision Trimming, Seasoned Firewood</span>
+            </div>
+            <div class="dispatch-Spec">
+              <span class="spec-key">Territory</span>
+              <span class="spec-val">Canutillo, Upper Valley, El Paso & Nearby Communities</span>
+            </div>
+
+            <div class="policy-callout">
+              <strong>Assessment Policy:</strong> Any online or photo submission provides an <em>initial read only</em>—never a substitute for an on-site structural inspection. All binding quotes are provided in writing after an in-person visit.
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Capabilities & Crew Work</span>
+            <h2 class="section-title">Built for Upper Valley & Desert Canopies</h2>
+          </div>
+          <p class="section-sub">
+            Whether clearing storm-damaged cottonwoods and mulberries in the Upper Valley or trimming desert evergreens near structures, Angel’s Tree Services leaves your yard clean and secure.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div>
+              <span class="service-num">01 // PRUNING</span>
+              <h3>Structural & Canopy Pruning</h3>
+              <p>
+                Selective crown thinning, deadwood removal, and weight reduction to help mature trees withstand high West Texas wind gusts without stressing the canopy.
+              </p>
+            </div>
+            <div class="service-meta">
+              <span>Full Debris Haul-Off</span>
+              <a href="#estimate" style="color: var(--safety-orange); font-weight: 700;">Book On-Site Quote →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <span class="service-num">02 // REMOVAL</span>
+              <h3>Hazardous & Full Tree Removal</h3>
+              <p>
+                Controlled rigging and sectional takedowns for dead, leaning, or storm-split trees near homes, walls, utility drops, and narrow residential lots.
+              </p>
+            </div>
+            <div class="service-meta">
+              <span>24/7 Emergency Ready</span>
+              <a href="#estimate" style="color: var(--safety-orange); font-weight: 700;">Book On-Site Quote →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <span class="service-num">03 // STUMP GRINDING</span>
+              <h3>Below-Grade Stump Grinding</h3>
+              <p>
+                Complete mechanical grinding of unsightly stumps and surface roots so you can replant, lay sod, pour concrete, or reclaim your yard space cleanly.
+              </p>
+            </div>
+            <div class="service-meta">
+              <span>Clean Backfill & Haul-Off</span>
+              <a href="#estimate" style="color: var(--safety-orange); font-weight: 700;">Book On-Site Quote →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <span class="service-num">04 // PRECISION TRIMMING</span>
+              <h3>Precision Clearance Trimming</h3>
+              <p>
+                Targeted shaping and clearance away from rooflines, solar panels, driveways, rock walls, and perimeter fencing to prevent rubbing and pest bridges.
+              </p>
+            </div>
+            <div class="service-meta">
+              <span>Roof & Line Clearance</span>
+              <a href="#estimate" style="color: var(--safety-orange); font-weight: 700;">Book On-Site Quote →</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <span class="service-num">05 // FIREWOOD</span>
+              <h3>Seasoned Firewood Supply</h3>
+              <p>
+                Dry, split, well-seasoned firewood ready for fireplaces, wood stoves, backyard smokers, and outdoor fire pits across Canutillo and El Paso.
+              </p>
+            </div>
+            <div class="service-meta">
+              <span>Pickup or Local Delivery</span>
+              <a href="tel:9152439717" style="color: var(--safety-orange); font-weight: 700;">Call for Availability →</a>
+            </div>
+          </article>
+
+          <article class="service-card" style="background-color: var(--forest); color: var(--parchment-light);">
+            <div>
+              <span class="service-num" style="background-color: var(--safety-orange); color: #fff;">06 // 24/7 EMERGENCY</span>
+              <h3 style="color: #fff;">Storm & Fallen Limb Dispatch</h3>
+              <p style="color: #C8D8CE;">
+                Monsoon winds or sudden limb failure blocking a driveway or resting on a structure? Call Angel directly any hour for rapid stabilization and haul-off.
+              </p>
+            </div>
+            <div class="service-meta" style="border-color: rgba(255,255,255,0.2); color: #fff;">
+              <span>Direct Line: (915) 243-9717</span>
+              <a href="tel:9152439717" style="color: #FFB088; font-weight: 700;">Call Now →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Field Work Gallery (4 Arborist Photos) -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Angel’s Trees in the Field</span>
+            <h2 class="section-title">Rigging, Climbing & Clean Haul-Off</h2>
+          </div>
+          <p class="section-sub">
+            Real work from Canutillo and El Paso jobsites. Every project concludes with thorough raking, chipping, and debris haul-off.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Photo 1 -->
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <img src="climber-tree-01.jpg" alt="Angel's Tree Services climber performing high canopy pruning" onerror="this.style.display='none';" />
+              <div class="photo-fallback">
+                <span class="photo-fallback-tag">PHOTO 01</span>
+                <span>Save image as <strong>climber-tree-01.jpg</strong></span>
+              </div>
+            </div>
+            <figcaption class="photo-caption">
+              <h4>High-Canopy Rigging & Pruning</h4>
+              <p>Rope-and-saddle crown reduction over residential structures in the Upper Valley.</p>
+            </figcaption>
+          </figure>
+
+          <!-- Photo 2 -->
+          <figure class="photo-card">
+            <div class="photo-frame">
+              <img src="climber-tree-02.jpg" alt="Controlled sectional tree removal in tight quarters" onerror="this.style.display='none';" />
+              <div class="photo-fallback">
+                <span class="photo-fallback-tag">PHOTO 02</span>
+                <span>Save image as <strong>climber-tree-02.jpg</strong></span>
+              </div>
+            </div>
+            <figcaption class="photo-caption">
+              <h4>Technical Sectional Removal</h4>
+              <p>Piece-by-piece lowering of heavy limbs near rock walls and utility lines.</p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage / Service Area Section -->
+    <section id="coverage" class="section section-alt">
+      <div class="container coverage-layout">
+        <div>
+          <span class="eyebrow">Local Dispatch Radius</span>
+          <h2 class="section-title" style="margin-bottom: 1rem;">Headquartered in Canutillo, Serving Greater El Paso</h2>
+          <p class="section-sub" style="margin-bottom: 1.25rem;">
+            Based out of <strong>141 Dixie St, Canutillo, TX 79835</strong>, Angel Adrian Loya and crew roll trucks daily throughout the Upper Valley, West El Paso, Central, and neighboring Rio Grande communities.
+          </p>
+          <div class="town-pills" aria-label="Communities Served">
+            <span class="town-pill primary">Canutillo, TX (HQ)</span>
+            <span class="town-pill primary">Upper Valley</span>
+            <span class="town-pill primary">El Paso, TX</span>
+            <span class="town-pill">West El Paso</span>
+            <span class="town-pill">Vinton, TX</span>
+            <span class="town-pill">Anthony, TX / NM</span>
+            <span class="town-pill">Santa Teresa, NM</span>
+            <span class="town-pill">Sunland Park, NM</span>
+            <span class="town-pill">Central & Mission Valley</span>
+          </div>
+        </div>
+
+        <div class="dispatch-card">
+          <div class="dispatch-header">
+            <span>WHY NEIGHBORS CALL ANGEL’S TREES</span>
+            <span>LOCAL GUARANTEE</span>
+          </div>
+          <div class="dispatch-body">
+            <div class="dispatch-Spec">
+              <span class="spec-key">Written Quote</span>
+              <span class="spec-val">Clear scope of work and total price in writing before a saw starts.</span>
+            </div>
+            <div class="dispatch-Spec">
+              <span class="spec-key">Zero Mess</span>
+              <span class="spec-val">All branches, logs, and rake-ings are hauled away unless you ask to keep firewood.</span>
+            </div>
+            <div class="dispatch-Spec">
+              <span class="spec-key">Direct Owner</span>
+              <span class="spec-val">You deal directly with Angel Adrian Loya from walk-through to final cleanup.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estimate & Initial Read Form Section -->
+    <section id="estimate" class="section">
+      <div class="container estimate-grid">
+        <div class="read-vs-inspection-box">
+          <span class="utility-badge" style="margin-bottom: 0.85rem;">How Quotes Work</span>
+          <h3>Free Written On-Site Estimate vs. Online Initial Read</h3>
+          <p style="font-size: 0.94rem; color: #D7E4DC;">
+            Every tree sits in a unique drop zone with different root stability, wood decay, and overhead obstacles. Here is how we handle requests accurately:
+          </p>
+          <ul class="comparison-list">
+            <li>
+              <strong>1. Online / Text Photo Submission = Initial Read Only</strong>
+              Sending tree details or photos online gives Angel a fast <em>initial read</em> on scope and equipment needs. <strong>It is not a formal arborist inspection or final quote.</strong>
+            </li>
+            <li>
+              <strong>2. In-Person Walk-Through = Free Written Estimate</strong>
+              Angel visits your property in person to check basal stability, drop zones, and access, then hands you a <strong>free written on-site estimate</strong> with debris haul-off included.
+            </li>
+            <li>
+              <strong>3. Urgent Hazard? Skip the Form</strong>
+              If a tree or heavy limb is actively splitting or resting on a roof, fence, or driveway, call <a href="tel:9152439717" style="color: #fff; text-decoration: underline; font-weight: 700;">(915) 243-9717</a> for 24/7 emergency response.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formspree Form -->
+        <div class="form-card">
+          <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--forest); margin-bottom: 0.35rem;">
+            Request an On-Site Estimate or Initial Read
+          </h3>
+          <p style="font-size: 0.92rem; color: var(--ink-muted); margin-bottom: 1.5rem;">
+            Fill out the details below and Angel will call or text you back promptly to schedule your free written on-site estimate.
+          </p>
+
+          <form id="estimate-form" action="https://formspree.io/f/mlgylrjy" method="POST">
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label" for="name">Your Name *</label>
+                <input class="form-input" type="text" id="name" name="name" required placeholder="e.g., Maria Gonzalez" />
+              </div>
+              <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input class="form-input" type="tel" id="phone" name="phone" required placeholder="(915) 555-0199" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label" for="location">Neighborhood / Community *</label>
+                <select class="form-select" id="location" name="location" required>
+                  <option value="" disabled selected>Select area...</option>
+                  <option value="Canutillo">Canutillo, TX</option>
+                  <option value="Upper Valley">Upper Valley (El Paso)</option>
+                  <option value="West El Paso">West El Paso</option>
+                  <option value="Central / Other El Paso">Central / East / NE El Paso</option>
+                  <option value="Vinton / Anthony">Vinton / Anthony</option>
+                  <option value="Santa Teresa / Sunland Park">Santa Teresa / Sunland Park, NM</option>
+                  <option value="Other Nearby">Other Nearby Area</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label" for="service">Primary Service Needed *</label>
+                <select class="form-select" id="service" name="service" required>
+                  <option value="" disabled selected>Select service...</option>
+                  <option value="Written On-Site Estimate (General)">Free Written On-Site Estimate</option>
+                  <option value="Tree Pruning">Structural Pruning</option>
+                  <option value="Tree Removal">Tree Removal</option>
+                  <option value="Stump Grinding">Stump Grinding</option>
+                  <option value="Precision Trimming">Precision Clearance Trimming</option>
+                  <option value="Seasoned Firewood">Seasoned Firewood Order</option>
+                  <option value="Emergency Tree Work">Urgent / Storm Damage</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="request_type">How would you like to start?</label>
+              <select class="form-select" id="request_type" name="request_type">
+                <option value="Schedule Free Written On-Site Estimate">Schedule a Free Written On-Site Estimate</option>
+                <option value="Initial Read + Follow-Up On-Site Visit">Get an Initial Read first, then schedule on-site visit</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="details">Tree Details, Access & Drop-Zone Notes</label>
+              <textarea class="form-textarea" id="details" name="details" rows="4" placeholder="Tell us roughly how many trees, approximate height, proximity to roofs/walls/power lines, or if you'd like to text photos for an initial read..."></textarea>
+            </div>
+
+            <label class="disclaimer-check">
+              <input type="checkbox" name="initial_read_acknowledged" value="Yes" required />
+              <span>
+                I understand that any online description or photo assessment is an <strong>initial read, not an inspection</strong>, and that final pricing is confirmed via a free written on-site estimate.
+              </span>
+            </label>
+
+            <button type="submit" id="submit-btn" class="btn btn-orange" style="width: 100%; font-size: 1rem;">
+              Send Request to Angel’s Tree Services
+            </button>
+
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Straight Answers</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Can I get a quote from photos, or do you need to see the tree in person?</summary>
+            <p>
+              You are welcome to describe the job or text photos for a quick <strong>initial read</strong> on scope, but an online or photo review is <strong>not an inspection</strong>. Because root flare health, internal decay, backyard gate width, and drop-zone hazards can only be verified in person, every binding quote is delivered as a <strong>free written on-site estimate</strong>.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is debris haul-off included in your tree work?</summary>
+            <p>
+              Yes. Full debris haul-off and yard rake-down are standard on our pruning, trimming, and removal jobs. You won’t be left with piles of brush at the curb. If you want limbs or trunk wood cut and stacked for your own firewood, just let Angel know during the walk-through.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you offer 24/7 emergency tree removal?</summary>
+            <p>
+              Yes. High winds and monsoon storms in Canutillo and El Paso frequently split heavy limbs over roofs, driveways, and fences. Call <a href="tel:9152439717" style="color: var(--safety-orange); font-weight: 700;">(915) 243-9717</a> at any hour for emergency stabilization and removal.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you sell seasoned firewood year-round?</summary>
+            <p>
+              We stock split, seasoned firewood at our Canutillo yard (141 Dixie St) and offer local delivery across the Upper Valley and El Paso. Call or submit the form above to check current cord/bundle availability.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Angel’s Tree Services</div>
+          <p class="footer-mono">Short Name: Angel’s Trees · Owner: Angel Adrian Loya</p>
+          <p style="font-size: 0.92rem; color: #D7E4DC; margin-top: 0.75rem; max-width: 42ch;">
+            Professional pruning, hazardous tree removal, stump grinding, precision trimming, and seasoned firewood with complete debris haul-off.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-title" style="font-size: 1.1rem;">Base & Direct Contact</div>
+          <p class="footer-mono">141 Dixie St, Canutillo, TX 79835</p>
+          <p class="footer-mono">Phone (24/7): <a href="tel:9152439717" style="color: #fff; text-decoration: underline;">(915) 243-9717</a></p>
+          <p class="footer-mono">Estimates: Free Written On-Site</p>
+        </div>
+
+        <div>
+          <div class="footer-title" style="font-size: 1.1rem;">Service Territory</div>
+          <p class="footer-mono">Canutillo · Upper Valley · West El Paso</p>
+          <p class="footer-mono">El Paso · Vinton · Anthony · Santa Teresa</p>
+          <p class="footer-mono" style="color: #FFB088; margin-top: 0.5rem;">
+            Online/photo reviews = initial read only, not an inspection.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Angel’s Tree Services (Angel Adrian Loya). All rights reserved.</span>
+        <span>angelstreeservices.47andsix.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Clean, Non-Garbled Form Submission & Page Script -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('estimate-form');
+    const statusBox = document.getElementById('form-status');
+    const submitBtn = document.getElementById('submit-btn');
+
+    if (form) {
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        statusBox.className = 'form-status';
+        statusBox.textContent = '';
+
+        const actionUrl = form.getAttribute('action') || '';
+
+        const originalBtnText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending Request...';
+
+        try {
+          const formData = new FormData(form);
+          const response = await fetch(actionUrl, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            form.reset();
+            statusBox.className = 'form-status success';
+            statusBox.textContent = 'Request received! Angel Adrian Loya will review your details for an initial read and contact you to schedule your free written on-site estimate. For urgent 24/7 emergencies, call (915) 243-9717.';
+          } else {
+            const data = await response.json().catch(() => ({}));
+            const errorMsg = (data.errors && data.errors.map(e => e.message).join(', ')) || 'Unable to submit form right now.';
+            statusBox.className = 'form-status error';
+            statusBox.textContent = errorMsg + ' Please call or text (915) 243-9717 directly.';
+          }
+        } catch (err) {
+          statusBox.className = 'form-status error';
+          statusBox.textContent = 'Network connection error. Please call or text Angel directly at (915) 243-9717.';
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalBtnText;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
