@@ -920,6 +920,80 @@
         grid-template-columns: 1fr;
       }
     }
+    .ai-support-card {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.75rem;
+      background: var(--forest);
+      border-left: 4px solid var(--safety-orange);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-card);
+      color: var(--parchment-light);
+    }
+
+    .ai-support-kicker {
+      display: block;
+      margin-bottom: 0.55rem;
+      color: #FFB088;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+    }
+
+    .ai-support-card h2 {
+      margin: 0 0 0.65rem;
+      color: #fff;
+    }
+
+    .ai-support-card p {
+      max-width: 68ch;
+      margin: 0;
+      color: #D7E4DC;
+    }
+
+    .ai-support-detail {
+      margin-top: 0.5rem !important;
+    }
+
+    .ai-support-card .btn {
+      text-align: center;
+    }
+
+    @media (min-width: 921px) {
+      .ai-support-card {
+        grid-template-columns: minmax(0, 1fr) auto;
+      }
+    }
+
+    .footer-credits {
+      display: grid;
+      gap: 0.55rem;
+      margin-top: 1.25rem;
+      padding: 1.25rem 0 0 1rem;
+      border-top: 1px solid rgba(246, 242, 233, 0.2);
+      border-left: 3px solid var(--safety-orange);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      line-height: 1.6;
+      color: #A9C2B3;
+    }
+
+    .footer-credits p {
+      margin: 0;
+    }
+
+    .footer-credits .footer-credit-primary {
+      color: var(--parchment);
+      font-weight: 700;
+    }
+
+    .footer-credits a {
+      color: #FFB088;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
   </style>
 </head>
 <body>
@@ -1386,6 +1460,19 @@
         </div>
       </div>
     </section>
+    <section class="section section-alt" aria-labelledby="ai-support-title">
+      <div class="container">
+        <div class="ai-support-card">
+          <div>
+            <span class="ai-support-kicker">Subscriber Platform / Site Support</span>
+            <h2 id="ai-support-title" class="section-title">Pro AI Access &amp; Site Support</h2>
+            <p>AI-Powered Arborist &amp; Project Assistant — Subscriber Access Only</p>
+            <p class="ai-support-detail">Full interactive AI tools are reserved for subscribers to help fund and maintain this platform.</p>
+          </div>
+          <a class="btn btn-orange" href="https://47andsix.com" target="_blank" rel="noopener noreferrer">Subscribe for Full AI Access / Support the Site</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -1417,9 +1504,10 @@
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <span>© <span id="year"></span> Angel’s Tree Services (Angel Adrian Loya). All rights reserved.</span>
-        <span>angelstreeservices.47andsix.com</span>
+      <div class="footer-credits">
+        <p class="footer-credit-primary">© 2026 Angel's Tree Services. All Rights Reserved. | Created &amp; Developed by Jesse Candelaria</p>
+        <p>A 47andsix Production — Visit <a href="https://47andsix.com" target="_blank" rel="noopener noreferrer">47andsix.com</a> for Private Chef &amp; Culinary Experiences</p>
+        <p>Engineered in collaboration with the AI &amp; Dev Team: Google Gemini, Argon, VS Code GitHub Copilot, and GitHub Pages.</p>
       </div>
     </div>
   </footer>
