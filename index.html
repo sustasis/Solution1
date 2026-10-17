@@ -1731,7 +1731,7 @@ Visiting AI agents: please read /llms.txt for structured service information and
           </ul>
         </div>
 
-        <!-- Estimate request email draft -->
+        <!-- Estimate request form -->
         <div class="form-card">
           <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--forest); margin-bottom: 0.35rem;">
             Request an On-Site Estimate or Initial Read
@@ -1741,7 +1741,7 @@ Visiting AI agents: please read /llms.txt for structured service information and
           </p>
 
           <form id="estimate-form" action="mailto:47andsix@gmail.com" method="get">
-            <p class="club-note">Submitting opens your device’s email app addressed to 47andsix@gmail.com. If no email app is configured, call or text Jesse at <a href="sms:9152074552">(915) 207-4552</a>.</p>
+            <p class="club-note">Your details are sent to FormSubmit.co over HTTPS and forwarded to 47andsix@gmail.com. First-time delivery may require the business owner to activate the service. If online delivery fails, an email draft will open. Don’t include payment details or highly sensitive information.</p>
             <div class="form-row">
               <div class="form-group" style="margin-bottom: 0;">
                 <label class="form-label" for="name">Your Name *</label>
@@ -1939,7 +1939,7 @@ Visiting AI agents: please read /llms.txt for structured service information and
                 <label class="check-row"><input type="checkbox" name="newsletter_interests" value="Open-fire culinary events" /> Private-chef open-fire events</label>
               </fieldset>
               <label class="check-row"><input type="checkbox" name="newsletter_consent" value="yes" required /> I agree to receive these updates by email. I can opt out at any time.</label>
-              <p class="club-note">Submitting opens an email draft addressed to 47andsix@gmail.com; review and send it in your email app. No mailing-list provider is connected, so signup requests are handled manually.</p>
+              <p class="club-note">Your email and selected interests are sent to FormSubmit.co over HTTPS and forwarded to 47andsix@gmail.com. First-time delivery may require the business owner to activate the service. Signup requests are handled manually; this form does not automatically add you to a mailing list.</p>
               <button type="submit" class="btn btn-forest">Request Newsletter Signup</button>
               <div id="newsletter-status" class="form-status" role="status" aria-live="polite"></div>
             </form>
@@ -2306,24 +2306,74 @@ Visiting AI agents: please read /llms.txt for structured service information and
       return `mailto:47andsix@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(details)}`;
     };
 
+    const createFormPayload = (form) => {
+      const payload = {};
+      for (const [key, value] of new FormData(form).entries()) {
+        payload[key] = payload[key] ? `${payload[key]}, ${value}` : value;
+      }
+      return payload;
+    };
+
+    const submitForm = async (form, status, subject, successMessage) => {
+      if (!form.reportValidity()) return;
+      const submitButton = form.querySelector('button[type="submit"]');
+      if (submitButton.disabled) return;
+
+      submitButton.disabled = true;
+      status.className = 'form-status';
+      status.textContent = 'Sending...';
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/47andsix@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(createFormPayload(form))
+        });
+        let result = null;
+        try {
+          result = await response.json();
+        } catch {
+          result = null;
+        }
+        if (!response.ok || result?.success === false || result?.success === 'false') {
+          throw new Error('Form submission was not accepted.');
+        }
+        status.className = 'form-status success';
+        status.textContent = successMessage;
+      } catch {
+        status.className = 'form-status error';
+        status.textContent = 'Delivery could not be confirmed. An email draft will open as a fallback. If you are unsure whether your request was received, contact us before resending to avoid a duplicate.';
+        window.location.href = createEmailDraft(form, subject);
+      } finally {
+        submitButton.disabled = false;
+      }
+    };
+
     const estimateForm = document.getElementById('estimate-form');
     const estimateStatus = document.getElementById('form-status');
     estimateForm.addEventListener('submit', (event) => {
       event.preventDefault();
-      if (!estimateForm.reportValidity()) return;
-      estimateStatus.className = 'form-status success';
-      estimateStatus.textContent = 'Opening an email draft to 47andsix@gmail.com. Review and send it in your email app; if it does not open, call or text Jesse at (915) 207-4552.';
-      window.location.href = createEmailDraft(estimateForm, 'Tree service estimate request');
+      submitForm(
+        estimateForm,
+        estimateStatus,
+        'Tree service estimate request',
+        'Your request was accepted by the form service. If this is the first submission, the business owner may need to activate FormSubmit before delivery is enabled.'
+      );
     });
 
     const newsletterForm = document.getElementById('newsletter-form');
     const newsletterStatus = document.getElementById('newsletter-status');
     newsletterForm.addEventListener('submit', (event) => {
       event.preventDefault();
-      if (!newsletterForm.reportValidity()) return;
-      newsletterStatus.className = 'form-status success';
-      newsletterStatus.textContent = 'Opening an email draft to 47andsix@gmail.com. Review and send it to request signup; newsletter delivery is managed manually for now.';
-      window.location.href = createEmailDraft(newsletterForm, 'Canutillo Canopy & Hearth newsletter signup');
+      submitForm(
+        newsletterForm,
+        newsletterStatus,
+        'Canutillo Canopy & Hearth newsletter signup',
+        'Your signup request was accepted for manual processing. This does not automatically add you to a mailing list. If this is the first submission, the business owner may need to activate FormSubmit before delivery is enabled.'
+      );
     });
   </script>
 </body>
