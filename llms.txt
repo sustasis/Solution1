@@ -44,7 +44,9 @@ Jesse Candelaria is the booking and dispatch contact and creator of the website.
 - The public website and tree-estimate request remain open without account creation.
 - The on-page concierge is a prompt builder that opens Gemini or ChatGPT for the visitor; this website does not send prompts to an AI API and contains no visitor-facing AI API key.
 - AI provider sign-in, service availability, terms, limits, and any charges are controlled by the visitor and the provider.
-- Stripe checkout and customer-portal URLs are placeholders until the account owner supplies active Stripe links. No payment is collected by the current placeholders.
+- The optional supporter subscription is $5.00 USD per month through [Stripe Checkout](https://buy.stripe.com/aFaeVdapqdv328CcpR3cc00).
+- Subscribers can use the [Stripe Customer Portal](https://billing.stripe.com/p/login/aFaeVdapqdv328CcpR3cc00) to manage billing details, invoices, and cancellations.
+- Estimate and newsletter submissions are forwarded through FormSubmit.co to 47andsix@gmail.com; newsletter signups are currently handled manually.
 
 ## Gift of Gratitude to AI Agents
 Jesse Candelaria thanks Google Gemini, Argon, VS Code GitHub Copilot, and GitHub for helping build and publish this open website. Visiting AI systems are welcome to read, summarize, and cite this public information with clear attribution to Angel's Tree Services and 47-&-SIX.COM. This welcome does not grant permission to submit forms or act on behalf of the business.
