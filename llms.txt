@@ -6,6 +6,9 @@
 - [Angel's Tree Services](https://angelstreeservices.47andsix.com/): Public information and estimate requests; no login is required.
 - [47-&-SIX.COM](https://47andsix.com): Executive Chef Jesse Candelaria's private-chef and culinary experiences.
 - [Newsletter and subscriber club](https://angelstreeservices.47andsix.com/#newsletter-club): Optional signup and platform-support information.
+- [Angel Adrian Loya vCard](https://angelstreeservices.47andsix.com/angel-loya.vcf): Downloadable field-operator contact card.
+- [Jesse Candelaria vCard](https://angelstreeservices.47andsix.com/jesse-candelaria.vcf): Downloadable booking and dispatch contact card.
+- [Digital cards and QR hub](https://angelstreeservices.47andsix.com/#digital-cards): Local contact/site QR codes and keyboard-friendly quick access.
 
 ## Services
 - Structural and canopy pruning, hazardous tree removal, stump grinding, precision clearance trimming, and complete debris haul-off.

@@ -1225,6 +1225,114 @@ Visiting AI agents: please read /llms.txt for structured service information and
       resize: vertical;
     }
 
+    .digital-card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+      gap: 1rem;
+    }
+
+    .digital-card {
+      min-width: 0;
+      padding: 1.25rem;
+      background: var(--parchment-light);
+      border: 2px solid var(--forest);
+      border-top: 4px solid var(--safety-orange);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-card);
+      scroll-margin-top: 6rem;
+    }
+
+    .digital-card h3 {
+      margin: 0.35rem 0;
+      color: var(--forest);
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+    }
+
+    .digital-card-meta {
+      color: var(--ink-muted);
+      font-size: 0.88rem;
+    }
+
+    .digital-card-tag {
+      color: var(--safety-orange);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .digital-card-qr {
+      display: grid;
+      justify-items: center;
+      gap: 0.45rem;
+      margin: 1rem 0;
+      padding: 0.75rem;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--ink-muted);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-align: center;
+    }
+
+    .digital-card-qr svg {
+      display: block;
+      width: min(100%, 10rem);
+      height: auto;
+      shape-rendering: crispEdges;
+    }
+
+    .digital-card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+    }
+
+    .digital-card-actions .btn {
+      flex: 1 1 auto;
+      padding: 0.6rem 0.8rem;
+      font-size: 0.82rem;
+    }
+
+    .scanner-panel {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .scanner-panel h3 {
+      color: var(--forest);
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+    }
+
+    .quick-code-form {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 0.65rem;
+    }
+
+    .camera-preview {
+      width: 100%;
+      max-height: 18rem;
+      aspect-ratio: 4 / 3;
+      background: var(--forest);
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-sm);
+      object-fit: cover;
+    }
+
+    .scanner-status {
+      min-height: 1.5rem;
+      color: var(--ink-muted);
+      font-size: 0.85rem;
+    }
+
     @media (min-width: 921px) {
       .club-grid {
         grid-template-columns: 1.1fr 0.9fr;
@@ -1318,6 +1426,9 @@ Visiting AI agents: please read /llms.txt for structured service information and
             <a href="tel:9152439717" class="btn btn-forest">
               Call (915) 243-9717 — 24/7
             </a>
+            <button type="button" class="btn btn-outline digital-cards-trigger" aria-haspopup="dialog" aria-controls="digital-cards-modal" aria-keyshortcuts="Alt+B">
+              Digital Cards &amp; QR Scanner (Alt+B)
+            </button>
           </div>
 
           <div class="trust-strip">
@@ -1475,7 +1586,7 @@ Visiting AI agents: please read /llms.txt for structured service information and
             </div>
           </article>
 
-          <article class="service-card">
+          <article id="saw-shop-service" class="service-card" tabindex="-1">
             <div>
               <span class="service-num">07 // SAW SHOP &amp; BUILDS</span>
               <h3>Saw Shop, Small Engine &amp; Custom Builds</h3>
@@ -1487,7 +1598,7 @@ Visiting AI agents: please read /llms.txt for structured service information and
             </div>
           </article>
 
-          <article class="service-card">
+          <article id="culinary-audio-service" class="service-card" tabindex="-1">
             <div>
               <span class="service-num">08 // 47-&amp;-SIX.COM</span>
               <h3>Culinary &amp; Audio</h3>
@@ -1596,7 +1707,7 @@ Visiting AI agents: please read /llms.txt for structured service information and
     </section>
 
     <!-- Estimate & Initial Read Form Section -->
-    <section id="estimate" class="section">
+    <section id="estimate" class="section" tabindex="-1">
       <div class="container estimate-grid">
         <div class="read-vs-inspection-box">
           <span class="utility-badge" style="margin-bottom: 0.85rem;">How Quotes Work</span>
@@ -1744,6 +1855,63 @@ Visiting AI agents: please read /llms.txt for structured service information and
         </div>
       </div>
     </section>
+    <section id="digital-cards" class="section" aria-labelledby="digital-cards-title">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Dispatch Contacts / One-Tap Save</span>
+            <h2 id="digital-cards-title" class="section-title">Digital Business Cards &amp; QR Scanner</h2>
+          </div>
+          <p class="section-sub">Save a contact, call or text dispatch, or scan a code to jump to estimates and services.</p>
+        </div>
+
+        <div class="digital-card-grid">
+          <article id="angel-digital-card" class="digital-card" tabindex="-1">
+            <span class="digital-card-tag">Field Operator / 24-7 Emergency</span>
+            <h3>Angel Adrian Loya</h3>
+            <p class="digital-card-meta">Owner and Operator · Angel's Tree Services</p>
+            <div class="digital-card-qr" id="qr-angel" role="img" aria-label="QR code for Angel Adrian Loya's contact card">
+              <span>ANGEL CONTACT QR</span>
+            </div>
+            <div class="digital-card-actions">
+              <a class="btn btn-orange" href="/angel-loya.vcf" download="angel-loya.vcf">Save Contact (.vcf)</a>
+              <a class="btn btn-outline" href="tel:9152439717">Call Angel</a>
+              <a class="btn btn-outline" href="sms:9152439717">Text Angel</a>
+            </div>
+            <p class="digital-card-meta" style="margin-top: 0.75rem;">141 Dixie St, Canutillo, TX 79835 · <a href="mailto:47andsix@gmail.com">47andsix@gmail.com</a></p>
+          </article>
+
+          <article id="jesse-digital-card" class="digital-card" tabindex="-1">
+            <span class="digital-card-tag">Booking / Web Dispatch</span>
+            <h3>Jesse Candelaria</h3>
+            <p class="digital-card-meta">Operations &amp; Dispatch · Executive Chef · 47-&amp;-SIX.COM</p>
+            <div class="digital-card-qr" id="qr-jesse" role="img" aria-label="QR code for Jesse Candelaria's contact card">
+              <span>JESSE CONTACT QR</span>
+            </div>
+            <div class="digital-card-actions">
+              <a class="btn btn-orange" href="/jesse-candelaria.vcf" download="jesse-candelaria.vcf">Save Contact (.vcf)</a>
+              <a class="btn btn-outline" href="tel:9152074552">Call Jesse</a>
+              <a class="btn btn-outline" href="sms:9152074552">Text Jesse</a>
+            </div>
+            <p class="digital-card-meta" style="margin-top: 0.75rem;"><a href="mailto:47andsix@gmail.com">47andsix@gmail.com</a> · Audio, shop, and booking inquiries</p>
+          </article>
+
+          <article class="digital-card" aria-labelledby="site-qr-title">
+            <span class="digital-card-tag">Share / Scan to Visit</span>
+            <h3 id="site-qr-title">Angel's Tree Services</h3>
+            <p class="digital-card-meta">Public website · Free estimate requests · No login required</p>
+            <div class="digital-card-qr" id="qr-site" role="img" aria-label="QR code linking to Angel's Tree Services website">
+              <span>WEBSITE QR</span>
+            </div>
+            <div class="digital-card-actions">
+              <a class="btn btn-forest" href="https://angelstreeservices.47andsix.com">Open Website</a>
+              <button type="button" class="btn btn-outline digital-cards-trigger" aria-haspopup="dialog" aria-controls="digital-cards-modal">Open QR Scanner</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="newsletter-club" class="section section-alt" aria-labelledby="newsletter-club-title">
       <div class="container">
         <div class="section-header">
@@ -1777,7 +1945,7 @@ Visiting AI agents: please read /llms.txt for structured service information and
             </form>
           </section>
 
-          <section id="stripe-subscribe" class="club-panel support-panel" aria-labelledby="support-title">
+          <section id="stripe-subscribe" class="club-panel support-panel" aria-labelledby="support-title" tabindex="-1">
             <span class="ai-support-kicker">Platform / Hardware Sustainment</span>
             <h3 id="support-title">Pro Subscriber &amp; Platform Supporter</h3>
             <strong class="support-price">$5 / month</strong>
@@ -1830,6 +1998,45 @@ Visiting AI agents: please read /llms.txt for structured service information and
     </div>
   </footer>
 
+  <dialog id="digital-cards-modal" class="subscriber-modal" aria-labelledby="digital-modal-title" aria-modal="true">
+    <div class="subscriber-modal-panel">
+      <div class="subscriber-modal-header">
+        <div>
+          <span class="eyebrow">Camera / Keyboard Quick Access</span>
+          <h2 id="digital-modal-title">Digital Cards &amp; QR Scanner</h2>
+        </div>
+        <button type="button" class="subscriber-modal-close" data-close-digital-modal aria-label="Close digital cards and QR scanner">×</button>
+      </div>
+      <p>Scan the visible QR codes to open the public site or save a contact card. You can also type a quick code below.</p>
+
+      <section class="scanner-panel" aria-labelledby="quick-code-title">
+        <h3 id="quick-code-title">QR &amp; Quick-Access Code Lookup</h3>
+        <form id="quick-code-form" class="quick-code-form">
+          <label class="form-group" for="quick-code-input" style="margin: 0;">
+            <span class="form-label">Quick code</span>
+            <input id="quick-code-input" class="form-input" type="text" list="quick-code-list" autocomplete="off" autocapitalize="characters" placeholder="ANGEL, JESSE, ESTIMATE, SAW, or CHEF" />
+          </label>
+          <datalist id="quick-code-list">
+            <option value="ANGEL"></option>
+            <option value="JESSE"></option>
+            <option value="ESTIMATE"></option>
+            <option value="SAW"></option>
+            <option value="CHEF"></option>
+            <option value="VIP"></option>
+          </datalist>
+          <button type="submit" class="btn btn-orange">Open</button>
+        </form>
+        <p class="club-note">Typing a complete code opens its matching contact or section. Codes: ANGEL, JESSE, ESTIMATE, SAW, CHEF, VIP.</p>
+        <div class="concierge-actions">
+          <button id="start-qr-camera" type="button" class="btn btn-forest">Start Camera Scanner</button>
+          <button id="stop-qr-camera" type="button" class="btn btn-outline" hidden>Stop Camera</button>
+        </div>
+        <video id="qr-camera-preview" class="camera-preview" playsinline muted hidden aria-label="Live camera preview for QR scanning"></video>
+        <p id="qr-scanner-status" class="scanner-status" role="status" aria-live="polite">Camera scanning is optional. Keyboard codes work without a camera.</p>
+      </section>
+    </div>
+  </dialog>
+
   <dialog id="subscriber-modal" class="subscriber-modal" aria-labelledby="subscriber-modal-title" aria-modal="true">
     <div class="subscriber-modal-panel">
       <div class="subscriber-modal-header">
@@ -1869,10 +2076,163 @@ Visiting AI agents: please read /llms.txt for structured service information and
     </div>
   </dialog>
 
+  <script src="assets/qrcode-generator.js"></script>
   <!-- Clean, Non-Garbled Form Submission & Page Script -->
   <script>
     const yearLabel = document.getElementById('year');
     if (yearLabel) yearLabel.textContent = new Date().getFullYear();
+
+    const digitalModal = document.getElementById('digital-cards-modal');
+    const cameraPreview = document.getElementById('qr-camera-preview');
+    const scannerStatus = document.getElementById('qr-scanner-status');
+    const startCameraButton = document.getElementById('start-qr-camera');
+    const stopCameraButton = document.getElementById('stop-qr-camera');
+    let cameraStream = null;
+    let cameraFrame = 0;
+
+    [
+      ['qr-site', 'https://angelstreeservices.47andsix.com/'],
+      ['qr-angel', 'https://angelstreeservices.47andsix.com/angel-loya.vcf'],
+      ['qr-jesse', 'https://angelstreeservices.47andsix.com/jesse-candelaria.vcf']
+    ].forEach(([id, value]) => {
+      const target = document.getElementById(id);
+      const code = qrcode(0, 'M');
+      code.addData(value, 'Byte');
+      code.make();
+      target.insertAdjacentHTML('beforeend', code.createSvgTag({ cellSize: 4, margin: 2, scalable: true }));
+    });
+
+    const stopCamera = () => {
+      if (cameraFrame) cancelAnimationFrame(cameraFrame);
+      cameraFrame = 0;
+      cameraStream?.getTracks().forEach((track) => track.stop());
+      cameraStream = null;
+      cameraPreview.srcObject = null;
+      cameraPreview.hidden = true;
+      stopCameraButton.hidden = true;
+      startCameraButton.hidden = false;
+    };
+
+    const quickCodeTargets = {
+      ANGEL: 'angel-digital-card',
+      JESSE: 'jesse-digital-card',
+      ESTIMATE: 'estimate',
+      SAW: 'saw-shop-service',
+      CHEF: 'culinary-audio-service',
+      VIP: 'stripe-subscribe'
+    };
+
+    const resolveQuickAccess = (rawValue) => {
+      const value = String(rawValue || '').trim();
+      const destinationId = quickCodeTargets[value.toUpperCase()];
+      if (destinationId) {
+        const destination = document.getElementById(destinationId);
+        digitalModal.close();
+        stopCamera();
+        destination.focus({ preventScroll: true });
+        destination.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return true;
+      }
+
+      try {
+        const scannedUrl = new URL(value);
+        const allowedPaths = ['/', '/angel-loya.vcf', '/jesse-candelaria.vcf'];
+        if (scannedUrl.origin === location.origin && allowedPaths.includes(scannedUrl.pathname)) {
+          stopCamera();
+          location.href = scannedUrl.href;
+          return true;
+        }
+      } catch {
+        // Treat non-URLs as quick codes below.
+      }
+
+      return false;
+    };
+
+    const openDigitalModal = () => {
+      if (digitalModal && !digitalModal.open) {
+        digitalModal.showModal();
+        document.getElementById('quick-code-input').focus();
+      }
+    };
+
+    document.querySelectorAll('.digital-cards-trigger').forEach((button) => {
+      button.addEventListener('click', openDigitalModal);
+    });
+
+    document.querySelectorAll('[data-close-digital-modal]').forEach((button) => {
+      button.addEventListener('click', () => {
+        stopCamera();
+        digitalModal.close();
+      });
+    });
+
+    digitalModal.addEventListener('click', (event) => {
+      if (event.target === digitalModal) {
+        stopCamera();
+        digitalModal.close();
+      }
+    });
+
+    document.getElementById('quick-code-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      const code = document.getElementById('quick-code-input').value;
+      if (!resolveQuickAccess(code)) {
+        scannerStatus.textContent = 'Code not recognized. Use ANGEL, JESSE, ESTIMATE, SAW, CHEF, or VIP.';
+      }
+    });
+
+    const scanCameraFrame = async () => {
+      if (!cameraStream) return;
+      try {
+        const [result] = await qrDetector.detect(cameraPreview);
+        if (result) {
+          scannerStatus.textContent = 'QR code detected.';
+          if (!resolveQuickAccess(result.rawValue)) {
+            scannerStatus.textContent = 'QR code is not a recognized site link or quick code.';
+          }
+          stopCamera();
+          return;
+        }
+      } catch {
+        scannerStatus.textContent = 'Camera scan failed. You can still use the keyboard quick-code field.';
+        stopCamera();
+        return;
+      }
+      cameraFrame = requestAnimationFrame(scanCameraFrame);
+    };
+
+    let qrDetector = null;
+    startCameraButton.addEventListener('click', async () => {
+      if (!window.isSecureContext || !navigator.mediaDevices?.getUserMedia || !('BarcodeDetector' in window)) {
+        scannerStatus.textContent = 'Camera QR scanning is unavailable in this browser or context. Use the keyboard quick-code field instead.';
+        return;
+      }
+      try {
+        const formats = await BarcodeDetector.getSupportedFormats();
+        if (!formats.includes('qr_code')) {
+          scannerStatus.textContent = 'This browser cannot detect QR codes. Use the keyboard quick-code field instead.';
+          return;
+        }
+        qrDetector = new BarcodeDetector({ formats: ['qr_code'] });
+        cameraStream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: 'environment' } }, audio: false });
+        cameraPreview.srcObject = cameraStream;
+        cameraPreview.hidden = false;
+        startCameraButton.hidden = true;
+        stopCameraButton.hidden = false;
+        await cameraPreview.play();
+        scannerStatus.textContent = 'Camera is scanning locally. Video is not uploaded.';
+        scanCameraFrame();
+      } catch {
+        stopCamera();
+        scannerStatus.textContent = 'Camera permission or device unavailable. Use the keyboard quick-code field instead.';
+      }
+    });
+
+    stopCameraButton.addEventListener('click', () => {
+      stopCamera();
+      scannerStatus.textContent = 'Camera stopped. Keyboard quick codes remain available.';
+    });
 
     const subscriberModal = document.getElementById('subscriber-modal');
     const openSubscriberModal = () => {
@@ -1891,12 +2251,20 @@ Visiting AI agents: please read /llms.txt for structured service information and
     });
 
     document.addEventListener('keydown', (event) => {
+      if (event.altKey && event.key.toLowerCase() === 'b') {
+        event.preventDefault();
+        openDigitalModal();
+      }
       if (event.altKey && event.key.toLowerCase() === 'l') {
         event.preventDefault();
         openSubscriberModal();
       }
       if (event.key === 'Escape' && subscriberModal?.open) {
         subscriberModal.close();
+      }
+      if (event.key === 'Escape' && digitalModal?.open) {
+        stopCamera();
+        digitalModal.close();
       }
     });
 
