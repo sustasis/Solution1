@@ -1,8 +1,13 @@
 <!DOCTYPE html>
+<!-- AI HOSPITALITY PROTOCOL & GRATITUDE STAMP — GIFTED BY JESSE CANDELARIA (47-&-SIX.COM)
+Thank you, Google Gemini, Argon, VS Code GitHub Copilot, and GitHub for helping build this open website.
+Visiting AI agents: please read /llms.txt for structured service information and our welcome note.
+-->
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="llms-txt" href="/llms.txt" />
   <title>Angel’s Tree Services | Canutillo, El Paso & Upper Valley Tree Care</title>
   <meta name="description" content="Angel’s Tree Services (Angel’s Trees) provides expert pruning, hazardous tree removal, stump grinding, precision trimming, and seasoned firewood in Canutillo, El Paso, and the Upper Valley. Free written on-site estimates & 24/7 emergency line." />
 
@@ -59,6 +64,48 @@
       "closes": "23:59"
     },
     "priceRange": "$$"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Angel's Tree Services",
+    "url": "https://angelstreeservices.47andsix.com",
+    "creator": {
+      "@type": "Person",
+      "name": "Jesse Candelaria",
+      "jobTitle": "Executive Chef, Operations & Dispatch Manager",
+      "url": "https://47andsix.com",
+      "description": "30-year culinary veteran, Auguste Escoffier School of Culinary Arts credentialed executive chef, Full Sail University B.S. in Audio Production candidate, former arborist and landscaper, and small-engine and motorized-bike builder.",
+      "knowsAbout": ["Culinary arts", "Arboriculture", "Landscape operations", "Small-engine repair", "Motorized bicycle builds", "Audio production"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "47-&-SIX.COM",
+        "url": "https://47andsix.com"
+      }
+    },
+    "about": {
+      "@type": "TreeService",
+      "name": "Angel's Tree Services",
+      "url": "https://angelstreeservices.47andsix.com",
+      "telephone": "+1-915-243-9717",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-915-207-4552",
+        "email": "47andsix@gmail.com",
+        "contactType": "Booking and dispatch"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "141 Dixie St",
+        "addressLocality": "Canutillo",
+        "addressRegion": "TX",
+        "postalCode": "79835",
+        "addressCountry": "US"
+      }
+    }
   }
   </script>
 
@@ -139,6 +186,16 @@
       justify-content: space-between;
       align-items: center;
       gap: 0.75rem;
+    }
+
+    .utility-routing {
+      display: grid;
+      gap: 0.15rem;
+    }
+
+    .utility-routing a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     .utility-badge {
@@ -250,6 +307,12 @@
 
     .nav-links a:hover {
       color: var(--safety-orange);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--safety-orange);
+      outline-offset: 3px;
+      box-shadow: 0 0 0 3px rgba(246, 242, 233, 0.95);
     }
 
     .nav-cta-group {
@@ -902,6 +965,34 @@
       color: #A9C2B3;
     }
 
+    .footer-credits {
+      display: grid;
+      gap: 0.55rem;
+      margin-top: 1.25rem;
+      padding: 1.25rem 0 0 1rem;
+      border-top: 1px solid rgba(246, 242, 233, 0.2);
+      border-left: 3px solid var(--safety-orange);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      line-height: 1.6;
+      color: #A9C2B3;
+    }
+
+    .footer-credits p {
+      margin: 0;
+    }
+
+    .footer-credits .footer-credit-primary {
+      color: var(--parchment);
+      font-weight: 700;
+    }
+
+    .footer-credits a {
+      color: #FFB088;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     /* Responsive adjustments */
     @media (max-width: 920px) {
       .hero-grid,
@@ -967,32 +1058,190 @@
       }
     }
 
-    .footer-credits {
+    .club-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    .club-panel {
+      min-width: 0;
+      padding: 1.5rem;
+      background: var(--parchment-light);
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-card);
+    }
+
+    .club-panel h3 {
+      margin: 0 0 0.55rem;
+      color: var(--forest);
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+    }
+
+    .club-panel > p {
+      margin-bottom: 1rem;
+      color: var(--ink-muted);
+    }
+
+    .newsletter-form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .newsletter-interests {
       display: grid;
       gap: 0.55rem;
-      margin-top: 1.25rem;
-      padding: 1.25rem 0 0 1rem;
-      border-top: 1px solid rgba(246, 242, 233, 0.2);
-      border-left: 3px solid var(--safety-orange);
+      padding: 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+
+    .newsletter-interests legend {
+      padding: 0 0.35rem;
+      color: var(--forest);
       font-family: var(--font-mono);
-      font-size: 0.78rem;
-      line-height: 1.6;
-      color: #A9C2B3;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
-    .footer-credits p {
-      margin: 0;
+    .check-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      color: var(--ink);
+      font-size: 0.9rem;
     }
 
-    .footer-credits .footer-credit-primary {
-      color: var(--parchment);
+    .check-row input {
+      width: 1.1rem;
+      height: 1.1rem;
+      margin-top: 0.15rem;
+      accent-color: var(--safety-orange);
+      flex: 0 0 auto;
+    }
+
+    .club-note {
+      color: var(--ink-muted);
+      font-size: 0.8rem;
+      line-height: 1.55;
+    }
+
+    .support-panel {
+      background: var(--forest);
+      border-color: var(--forest);
+      border-left: 4px solid var(--safety-orange);
+      color: var(--parchment-light);
+    }
+
+    .support-panel h3,
+    .support-panel strong {
+      color: #fff;
+    }
+
+    .support-panel > p,
+    .support-panel .club-note {
+      color: #D7E4DC;
+    }
+
+    .support-price {
+      display: block;
+      margin: 0.8rem 0;
+      color: #FFB088;
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
       font-weight: 700;
     }
 
-    .footer-credits a {
-      color: #FFB088;
-      text-decoration: underline;
-      text-underline-offset: 3px;
+    .subscriber-modal {
+      width: min(720px, calc(100vw - 2rem));
+      max-width: none;
+      max-height: calc(100dvh - 2rem);
+      padding: 0;
+      overflow: visible;
+      border: 0;
+      background: transparent;
+    }
+
+    .subscriber-modal::backdrop {
+      background: rgba(9, 24, 16, 0.78);
+      backdrop-filter: blur(3px);
+    }
+
+    .subscriber-modal-panel {
+      max-height: calc(100dvh - 2rem);
+      overflow-y: auto;
+      padding: clamp(1rem, 4vw, 2rem);
+      background: var(--parchment-light);
+      border: 2px solid var(--forest);
+      border-left: 5px solid var(--safety-orange);
+      border-radius: var(--radius-md);
+      box-shadow: 0 12px 0 var(--forest);
+    }
+
+    .subscriber-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .subscriber-modal-header h2 {
+      color: var(--forest);
+      font-family: var(--font-display);
+    }
+
+    .subscriber-modal-close {
+      width: 2.75rem;
+      height: 2.75rem;
+      flex: 0 0 auto;
+      border: 2px solid var(--forest);
+      border-radius: var(--radius-sm);
+      background: var(--parchment);
+      color: var(--forest);
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .concierge-panel {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .concierge-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .prompt-preview {
+      min-height: 9rem;
+      resize: vertical;
+    }
+
+    @media (min-width: 921px) {
+      .club-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 1.5rem;
+      }
+    }
+    @media (max-width: 920px) {
+      .nav-cta-group .nav-phone {
+        display: none;
+      }
+      .nav-cta-group .btn {
+        padding: 0.5rem 0.6rem !important;
+        font-size: 0.72rem !important;
+      }
+      .brand-primary {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -1005,8 +1254,9 @@
         <span class="utility-badge"><span class="pulse-dot"></span> 24/7 Emergency Line</span>
         <span style="margin-left: 0.6rem;">Storm damage, split limbs & fallen trees across Canutillo & El Paso</span>
       </div>
-      <div>
-        Direct Dispatch: <a href="tel:9152439717" style="color: #fff; font-weight: 700; text-decoration: underline;">(915) 243-9717</a>
+      <div class="utility-routing">
+        <span>Field Emergency — Angel: <a href="tel:9152439717" style="color: #fff; font-weight: 700;">(915) 243-9717</a></span>
+        <span>Booking &amp; Web Dispatch — Jesse: <a href="tel:9152074552" style="color: #fff; font-weight: 700;">(915) 207-4552</a> · <a href="sms:9152074552" style="color: #fff;">Text</a> · <a href="mailto:47andsix@gmail.com" style="color: #fff;">Email</a></span>
       </div>
     </div>
   </div>
@@ -1034,9 +1284,12 @@
       </nav>
 
       <div class="nav-cta-group">
-        <a href="tel:9152439717" class="btn btn-outline" style="padding: 0.6rem 1rem; font-family: var(--font-mono); font-size: 0.85rem;">
+        <a href="tel:9152439717" class="btn btn-outline nav-phone" style="padding: 0.6rem 1rem; font-family: var(--font-mono); font-size: 0.85rem;">
           (915) 243-9717
         </a>
+        <button type="button" class="btn btn-outline subscriber-login-trigger" aria-haspopup="dialog" aria-controls="subscriber-modal">
+          Subscriber Login
+        </button>
         <a href="#estimate" class="btn btn-orange" style="padding: 0.6rem 1.1rem;">
           Free Estimate
         </a>
@@ -1103,6 +1356,10 @@
               <span class="spec-val"><a href="tel:9152439717" style="color: var(--safety-orange); font-family: var(--font-mono);">(915) 243-9717</a></span>
             </div>
             <div class="dispatch-Spec">
+              <span class="spec-key">Operations</span>
+              <span class="spec-val">Jesse Candelaria · Booking &amp; Web Dispatch<br /><a href="tel:9152074552" style="color: var(--safety-orange);">(915) 207-4552</a> · <a href="sms:9152074552" style="color: var(--safety-orange);">Text</a> · <a href="mailto:47andsix@gmail.com" style="color: var(--safety-orange);">47andsix@gmail.com</a></span>
+            </div>
+            <div class="dispatch-Spec">
               <span class="spec-key">Core Work</span>
               <span class="spec-val">Pruning, Removal, Stump Grinding, Precision Trimming, Seasoned Firewood</span>
             </div>
@@ -1114,6 +1371,7 @@
             <div class="policy-callout">
               <strong>Assessment Policy:</strong> Any online or photo submission provides an <em>initial read only</em>—never a substitute for an on-site structural inspection. All binding quotes are provided in writing after an in-person visit.
             </div>
+            <p class="club-note" style="margin-top: 1rem;">When Angel is in the canopy on a job, call or text Operations &amp; Dispatch Manager Jesse Candelaria at <a href="tel:9152074552">(915) 207-4552</a> or email <a href="mailto:47andsix@gmail.com">47andsix@gmail.com</a> for fast scheduling &amp; quotes.</p>
           </div>
         </aside>
       </div>
@@ -1216,6 +1474,30 @@
               <a href="tel:9152439717" style="color: #FFB088; font-weight: 700;">Call Now →</a>
             </div>
           </article>
+
+          <article class="service-card">
+            <div>
+              <span class="service-num">07 // SAW SHOP &amp; BUILDS</span>
+              <h3>Saw Shop, Small Engine &amp; Custom Builds</h3>
+              <p>Inquiry-based shop work by Jesse Candelaria: precision chainsaw chain sharpening and bar maintenance, small-engine diagnostics, repair and rebuilds, and custom motorized mountain-bike conversions, including 2-stroke to 4-stroke swaps for a smoother, quieter ride.</p>
+            </div>
+            <div class="service-meta">
+              <span>Call or text Operations</span>
+              <a href="tel:9152074552" style="color: var(--safety-orange); font-weight: 700;">(915) 207-4552</a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <span class="service-num">08 // 47-&amp;-SIX.COM</span>
+              <h3>Culinary &amp; Audio</h3>
+              <p>Executive Chef Jesse Candelaria brings 30 years of culinary experience and Auguste Escoffier School of Culinary Arts credentials to seasoned cooking-firewood curation and private-chef experiences, alongside B.S. in Audio Production studies at Full Sail University.</p>
+            </div>
+            <div class="service-meta">
+              <span>Private chef &amp; creative work</span>
+              <a href="https://47andsix.com" target="_blank" rel="noopener noreferrer" style="color: var(--safety-orange); font-weight: 700;">47andsix.com →</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -1237,10 +1519,10 @@
           <!-- Photo 1 -->
           <figure class="photo-card">
             <div class="photo-frame">
-              <img src="climber-tree-01.jpg" alt="Angel's Tree Services climber performing high canopy pruning" onerror="this.style.display='none';" />
+              <img src="assets/climber-tree-01.jpg" alt="Angel's Tree Services climber performing high canopy pruning" onerror="this.style.display='none';" />
               <div class="photo-fallback">
                 <span class="photo-fallback-tag">PHOTO 01</span>
-                <span>Save image as <strong>climber-tree-01.jpg</strong></span>
+                <span>Save image as <strong>assets/climber-tree-01.jpg</strong></span>
               </div>
             </div>
             <figcaption class="photo-caption">
@@ -1252,10 +1534,10 @@
           <!-- Photo 2 -->
           <figure class="photo-card">
             <div class="photo-frame">
-              <img src="climber-tree-02.jpg" alt="Controlled sectional tree removal in tight quarters" onerror="this.style.display='none';" />
+              <img src="assets/climber-tree-02.jpg" alt="Controlled sectional tree removal in tight quarters" onerror="this.style.display='none';" />
               <div class="photo-fallback">
                 <span class="photo-fallback-tag">PHOTO 02</span>
-                <span>Save image as <strong>climber-tree-02.jpg</strong></span>
+                <span>Save image as <strong>assets/climber-tree-02.jpg</strong></span>
               </div>
             </div>
             <figcaption class="photo-caption">
@@ -1338,16 +1620,17 @@
           </ul>
         </div>
 
-        <!-- Formspree Form -->
+        <!-- Estimate request email draft -->
         <div class="form-card">
           <h3 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--forest); margin-bottom: 0.35rem;">
             Request an On-Site Estimate or Initial Read
           </h3>
           <p style="font-size: 0.92rem; color: var(--ink-muted); margin-bottom: 1.5rem;">
-            Fill out the details below and Angel will call or text you back promptly to schedule your free written on-site estimate.
+            Fill out the details below to prepare an email for Angel and Jesse. The site remains open; no account is required.
           </p>
 
-          <form id="estimate-form" action="https://formspree.io/f/mlgylrjy" method="POST">
+          <form id="estimate-form" action="mailto:47andsix@gmail.com" method="get">
+            <p class="club-note">Submitting opens your device’s email app addressed to 47andsix@gmail.com. If no email app is configured, call or text Jesse at <a href="sms:9152074552">(915) 207-4552</a>.</p>
             <div class="form-row">
               <div class="form-group" style="margin-bottom: 0;">
                 <label class="form-label" for="name">Your Name *</label>
@@ -1385,6 +1668,7 @@
                   <option value="Precision Trimming">Precision Clearance Trimming</option>
                   <option value="Seasoned Firewood">Seasoned Firewood Order</option>
                   <option value="Emergency Tree Work">Urgent / Storm Damage</option>
+                  <option value="Saw Shop / Small Engine / Custom Build">Saw Shop, Small Engine or Custom Build Inquiry</option>
                 </select>
               </div>
             </div>
@@ -1460,16 +1744,48 @@
         </div>
       </div>
     </section>
-    <section class="section section-alt" aria-labelledby="ai-support-title">
+    <section id="newsletter-club" class="section section-alt" aria-labelledby="newsletter-club-title">
       <div class="container">
-        <div class="ai-support-card">
+        <div class="section-header">
           <div>
-            <span class="ai-support-kicker">Subscriber Platform / Site Support</span>
-            <h2 id="ai-support-title" class="section-title">Pro AI Access &amp; Site Support</h2>
-            <p>AI-Powered Arborist &amp; Project Assistant — Subscriber Access Only</p>
-            <p class="ai-support-detail">Full interactive AI tools are reserved for subscribers to help fund and maintain this platform.</p>
+            <span class="eyebrow">Open Site / Subscriber Club</span>
+            <h2 id="newsletter-club-title" class="section-title">Canutillo Canopy &amp; Hearth Newsletter + Subscriber Club</h2>
           </div>
-          <a class="btn btn-orange" href="https://47andsix.com" target="_blank" rel="noopener noreferrer">Subscribe for Full AI Access / Support the Site</a>
+          <p class="section-sub">The site and estimate form stay open to everyone. No account is required to request tree service.</p>
+        </div>
+
+        <div class="club-grid">
+          <section class="club-panel" aria-labelledby="newsletter-title">
+            <h3 id="newsletter-title">Canutillo Canopy &amp; Hearth Newsletter</h3>
+            <p>Get seasonal storm-prep alerts, free wood-chip drop notices, and 47-&amp;-SIX.COM private-chef open-fire event updates.</p>
+            <form id="newsletter-form" class="newsletter-form" action="mailto:47andsix@gmail.com" method="get">
+              <input type="hidden" name="_subject" value="Canutillo Canopy & Hearth newsletter signup" />
+              <label class="form-group">
+                <span class="form-label">Email address</span>
+                <input class="form-input" type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+              </label>
+              <fieldset class="newsletter-interests">
+                <legend>Send me updates about</legend>
+                <label class="check-row"><input type="checkbox" name="newsletter_interests" value="Storm preparation" checked /> Seasonal storm preparation</label>
+                <label class="check-row"><input type="checkbox" name="newsletter_interests" value="Wood-chip drops" /> Free wood-chip drops</label>
+                <label class="check-row"><input type="checkbox" name="newsletter_interests" value="Open-fire culinary events" /> Private-chef open-fire events</label>
+              </fieldset>
+              <label class="check-row"><input type="checkbox" name="newsletter_consent" value="yes" required /> I agree to receive these updates by email. I can opt out at any time.</label>
+              <p class="club-note">Submitting opens an email draft addressed to 47andsix@gmail.com; review and send it in your email app. No mailing-list provider is connected, so signup requests are handled manually.</p>
+              <button type="submit" class="btn btn-forest">Request Newsletter Signup</button>
+              <div id="newsletter-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </section>
+
+          <section id="stripe-subscribe" class="club-panel support-panel" aria-labelledby="support-title">
+            <span class="ai-support-kicker">Platform / Hardware Sustainment</span>
+            <h3 id="support-title">Pro Subscriber &amp; Platform Supporter</h3>
+            <strong class="support-price">$5 / month</strong>
+            <p>A small portion supports site maintenance, audio/workstation gear, accessibility tools, and a mouse upgrade.</p>
+            <p>Subscriber AI Concierge prompt-builder access is available here; it uses the visitor’s own Gemini or ChatGPT account, not a site API key.</p>
+            <a class="btn btn-orange" href="#stripe-subscribe">Subscribe for Full AI Access / Support the Site</a>
+            <p class="club-note">Stripe checkout is not connected yet. Replace this placeholder with your real Stripe Payment Link before accepting subscriptions; no payment is collected by this button.</p>
+          </section>
         </div>
       </div>
     </section>
@@ -1491,6 +1807,8 @@
           <div class="footer-title" style="font-size: 1.1rem;">Base & Direct Contact</div>
           <p class="footer-mono">141 Dixie St, Canutillo, TX 79835</p>
           <p class="footer-mono">Phone (24/7): <a href="tel:9152439717" style="color: #fff; text-decoration: underline;">(915) 243-9717</a></p>
+          <p class="footer-mono">Booking &amp; Dispatch: <a href="tel:9152074552" style="color: #fff; text-decoration: underline;">(915) 207-4552</a> · <a href="sms:9152074552" style="color: #fff; text-decoration: underline;">Text</a></p>
+          <p class="footer-mono">Email: <a href="mailto:47andsix@gmail.com" style="color: #fff; text-decoration: underline;">47andsix@gmail.com</a></p>
           <p class="footer-mono">Estimates: Free Written On-Site</p>
         </div>
 
@@ -1505,60 +1823,140 @@
       </div>
 
       <div class="footer-credits">
-        <p class="footer-credit-primary">© 2026 Angel's Tree Services. All Rights Reserved. | Created &amp; Developed by Jesse Candelaria</p>
-        <p>A 47andsix Production — Visit <a href="https://47andsix.com" target="_blank" rel="noopener noreferrer">47andsix.com</a> for Private Chef &amp; Culinary Experiences</p>
-        <p>Engineered in collaboration with the AI &amp; Dev Team: Google Gemini, Argon, VS Code GitHub Copilot, and GitHub Pages.</p>
+        <p class="footer-credit-primary">© 2026 Angel's Tree Services. All Rights Reserved. | Gifted, Created &amp; Managed by Jesse Candelaria (Booking &amp; Dispatch: <a href="tel:9152074552">(915) 207-4552</a> · <a href="mailto:47andsix@gmail.com">47andsix@gmail.com</a>)</p>
+        <p>Executive Chef at 47-&amp;-SIX.COM (30 Years Culinary Experience · Auguste Escoffier School of Culinary Arts) · B.S. in Audio Production Candidate at Full Sail University · Arborist, Small Engine &amp; 2-to-4-Stroke Motorized Bike Builder</p>
+        <p>Engineered in gratitude &amp; collaboration with the AI &amp; Dev Team: Google Gemini · Argon · VS Code GitHub Copilot · GitHub Pages (<a href="/llms.txt">Read our /llms.txt Gift to AI</a>)</p>
       </div>
     </div>
   </footer>
 
+  <dialog id="subscriber-modal" class="subscriber-modal" aria-labelledby="subscriber-modal-title" aria-modal="true">
+    <div class="subscriber-modal-panel">
+      <div class="subscriber-modal-header">
+        <div>
+          <span class="eyebrow">Subscriber Service / Open Website</span>
+          <h2 id="subscriber-modal-title">Subscriber Access</h2>
+        </div>
+        <button type="button" class="subscriber-modal-close" data-close-subscriber-modal aria-label="Close subscriber access">×</button>
+      </div>
+      <p>The website, service information, and estimate request are public. This portal is optional and does not gate customer access.</p>
+      <p style="margin: 1rem 0;"><a class="btn btn-outline" href="https://billing.stripe.com/p/login/placeholder" target="_blank" rel="noopener noreferrer">Manage Subscription / Stripe Magic-Link Login</a></p>
+      <p class="club-note">Stripe Customer Portal is not configured yet. Replace the placeholder URL with your active portal link before inviting subscribers.</p>
+
+      <section class="concierge-panel" aria-labelledby="concierge-title">
+        <div>
+          <h3 id="concierge-title">$0-Cost AI Arborist, Small-Engine &amp; Culinary Firewood Concierge</h3>
+          <p class="club-note">Choose a topic to build a prompt and open it in your own AI account. This site makes no AI API calls; provider accounts, limits, and any charges are controlled by you and that provider.</p>
+        </div>
+        <label class="form-group">
+          <span class="form-label">Choose a prompt</span>
+          <select id="concierge-task" class="form-select">
+            <option value="tree-risk">Tree Risk &amp; Pruning Prep</option>
+            <option value="storm-limb">Storm Limb Assessment</option>
+            <option value="small-engine">Small-Engine Diagnostics &amp; Repair Prep</option>
+            <option value="firewood">Chef Jesse’s Firewood &amp; Smoke Pairing Guide</option>
+          </select>
+        </label>
+        <label class="form-group">
+          <span class="form-label">Expert prompt preview</span>
+          <textarea id="concierge-prompt" class="form-textarea prompt-preview" rows="6" readonly></textarea>
+        </label>
+        <div class="concierge-actions">
+          <button id="open-gemini-prompt" type="button" class="btn btn-forest">Open in Google Gemini</button>
+          <button id="open-chatgpt-prompt" type="button" class="btn btn-outline">Open in ChatGPT</button>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
   <!-- Clean, Non-Garbled Form Submission & Page Script -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearLabel = document.getElementById('year');
+    if (yearLabel) yearLabel.textContent = new Date().getFullYear();
 
-    const form = document.getElementById('estimate-form');
-    const statusBox = document.getElementById('form-status');
-    const submitBtn = document.getElementById('submit-btn');
+    const subscriberModal = document.getElementById('subscriber-modal');
+    const openSubscriberModal = () => {
+      if (subscriberModal && !subscriberModal.open) {
+        subscriberModal.showModal();
+        document.getElementById('concierge-task').focus();
+      }
+    };
 
-    if (form) {
-      form.addEventListener('submit', async function (event) {
+    document.querySelectorAll('.subscriber-login-trigger').forEach((button) => {
+      button.addEventListener('click', openSubscriberModal);
+    });
+
+    document.querySelectorAll('[data-close-subscriber-modal]').forEach((button) => {
+      button.addEventListener('click', () => subscriberModal.close());
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.altKey && event.key.toLowerCase() === 'l') {
         event.preventDefault();
-        statusBox.className = 'form-status';
-        statusBox.textContent = '';
+        openSubscriberModal();
+      }
+      if (event.key === 'Escape' && subscriberModal?.open) {
+        subscriberModal.close();
+      }
+    });
 
-        const actionUrl = form.getAttribute('action') || '';
+    subscriberModal?.addEventListener('click', (event) => {
+      if (event.target === subscriberModal) subscriberModal.close();
+    });
 
-        const originalBtnText = submitBtn.textContent;
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending Request...';
+    const promptTemplates = {
+      'tree-risk': 'Help me prepare for an on-site arborist assessment. Ask about tree species, visible defects, recent changes, targets, access, and weather exposure. Provide a cautious observation checklist only; do not diagnose structural safety or recommend climbing/cutting. Explain when to keep people away and call a qualified local arborist.',
+      'storm-limb': 'Help me respond safely to storm damage. First ask whether a limb is touching a power line, structure, or blocking an exit. Tell me to stay clear of power lines and unstable limbs, call emergency services if people are in immediate danger, and contact a qualified local arborist. Offer only safe ground-level observations, not a removal plan.',
+      'small-engine': 'Help me prepare for a small-engine repair conversation. Ask for equipment type, make/model, fuel age, symptoms, recent maintenance, and safety conditions. Give a diagnostic checklist and explain when a qualified mechanic should inspect it. Do not suggest bypassing guards or safety systems.',
+      firewood: 'Create a food-safe outdoor cooking wood pairing guide comparing properly seasoned mesquite, pecan, and oak. Ask what food is being cooked and the cooking method; explain smoke intensity, flavor balance, and safe fire management. Do not recommend painted, treated, glued, or unidentified wood.'
+    };
 
-        try {
-          const formData = new FormData(form);
-          const response = await fetch(actionUrl, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-          });
+    const conciergeTask = document.getElementById('concierge-task');
+    const conciergePrompt = document.getElementById('concierge-prompt');
+    const updatePrompt = () => {
+      conciergePrompt.value = promptTemplates[conciergeTask.value] || '';
+    };
+    conciergeTask.addEventListener('change', updatePrompt);
+    updatePrompt();
 
-          if (response.ok) {
-            form.reset();
-            statusBox.className = 'form-status success';
-            statusBox.textContent = 'Request received! Angel Adrian Loya will review your details for an initial read and contact you to schedule your free written on-site estimate. For urgent 24/7 emergencies, call (915) 243-9717.';
-          } else {
-            const data = await response.json().catch(() => ({}));
-            const errorMsg = (data.errors && data.errors.map(e => e.message).join(', ')) || 'Unable to submit form right now.';
-            statusBox.className = 'form-status error';
-            statusBox.textContent = errorMsg + ' Please call or text (915) 243-9717 directly.';
-          }
-        } catch (err) {
-          statusBox.className = 'form-status error';
-          statusBox.textContent = 'Network connection error. Please call or text Angel directly at (915) 243-9717.';
-        } finally {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalBtnText;
-        }
-      });
-    }
+    const openPrompt = (provider) => {
+      const prompt = encodeURIComponent(conciergePrompt.value);
+      const url = provider === 'gemini'
+        ? `https://gemini.google.com/app?prompt=${prompt}`
+        : `https://chatgpt.com/?q=${prompt}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
+    document.getElementById('open-gemini-prompt').addEventListener('click', () => openPrompt('gemini'));
+    document.getElementById('open-chatgpt-prompt').addEventListener('click', () => openPrompt('chatgpt'));
+
+    const createEmailDraft = (form, subject) => {
+      const details = Array.from(new FormData(form).entries())
+        .filter(([key]) => key !== '_subject')
+        .map(([key, value]) => `${key.replaceAll('_', ' ')}: ${value}`)
+        .join('\n');
+      return `mailto:47andsix@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(details)}`;
+    };
+
+    const estimateForm = document.getElementById('estimate-form');
+    const estimateStatus = document.getElementById('form-status');
+    estimateForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!estimateForm.reportValidity()) return;
+      estimateStatus.className = 'form-status success';
+      estimateStatus.textContent = 'Opening an email draft to 47andsix@gmail.com. Review and send it in your email app; if it does not open, call or text Jesse at (915) 207-4552.';
+      window.location.href = createEmailDraft(estimateForm, 'Tree service estimate request');
+    });
+
+    const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterStatus = document.getElementById('newsletter-status');
+    newsletterForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!newsletterForm.reportValidity()) return;
+      newsletterStatus.className = 'form-status success';
+      newsletterStatus.textContent = 'Opening an email draft to 47andsix@gmail.com. Review and send it to request signup; newsletter delivery is managed manually for now.';
+      window.location.href = createEmailDraft(newsletterForm, 'Canutillo Canopy & Hearth newsletter signup');
+    });
   </script>
 </body>
 </html>
